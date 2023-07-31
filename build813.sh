@@ -1,7 +1,7 @@
 #!/bin/sh
 
-SYSTEM_PATH=~/Project/MowRobot/mower-ros/system
-IMG_PATH=~/Project/MowRobot/mower-ros/system/build/output/images/version
+SYSTEM_PATH=~/Project/Mower/mower-ros/system
+IMG_PATH=~/Project/Mower/mower-ros/system/build/output/images/version
 PHOENIXSUIT_PATH=~/Bin/phoenixsuit
 
 cd $SYSTEM_PATH && ./mkfirmware.sh

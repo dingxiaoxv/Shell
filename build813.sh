@@ -6,7 +6,7 @@ PHOENIXSUIT_PATH=~/Bin/phoenixsuit
 
 cd $SYSTEM_PATH && ./mkfirmware.sh
 IMG="$(cd $IMG_PATH && ls | grep "factory" | sed '/sha256sum/d')"
-cp $IMG_PATH/$IMG $PHOENIXSUIT_PATH
 cd $PHOENIXSUIT_PATH
 rm -rf *.img
+cp $IMG_PATH/$IMG $PHOENIXSUIT_PATH
 sudo ./phoenixsuit $IMG && rm -rf $IMG
